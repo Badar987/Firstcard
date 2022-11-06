@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<title>Profile Link With API</title>
+<link rel="stylesheet" href="10.css">
+</head>
+<body>
+<div class="card">
+    <div class="fit">
+        <div id="image" class="img">
+            <img height="80px" width="80px" src="./image/WhatsApp Image 2022-09-22 at 11.38.39 PM.jpeg" alt="">
+        </div>
+    </div>
+    <div class="sd">
+        <div class="name">
+            <h5 id="name"></h5>
+        </div>
+        <div class="profession">
+            <h6 id="profession"></h6>
+        </div>
+        <div class="bio">
+            <p id="bio"></p>
+        </div>
+        <div class="button">
+            <a id="link1" href="https://github.com/Badar987" > 
+                <button type="button" class="btn btn-primary btn-lg">View Profile</button>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+fetch('https://api.github.com/users/Badar987')
+  .then(response => response.json())
+  .then(json => {
+document.getElementById("name").innerHTML = json.name;
+document.getElementById("profession").innerHTML = "Mern Developer";
+document.getElementById("bio").innerHTML = json.bio;
+
+  })
+</script>
+</body>
+</html>

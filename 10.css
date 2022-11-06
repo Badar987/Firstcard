@@ -1,0 +1,48 @@
+.card{
+    background-color: orange;
+    border-radius: 10px;
+    height: 644px;
+    width: 400px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+.fit{
+    width: 398;
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgb(196, 218, 73);
+}
+.fit img{
+    margin-top: 210px;
+    margin-left: 160px;
+    border-radius: 45px;
+}
+.name{
+    width: 398;
+    height: 82px;
+}
+.profession{
+    width: 398;
+    height: 82px;
+}
+.bio{
+    width: 398;
+    height: 82px;   
+}
+.button{
+    width: 398;
+    height: 82px;
+    margin-left: 130px;
+    margin-top: 25px;
+}
+#name{
+    text-align: center;
+    margin-top: 40px;
+}
+#profession{
+    text-align: center;
+}
+#bio{
+    text-align: center;
+}
